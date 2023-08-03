@@ -1,5 +1,5 @@
 {% set name = "pymc-marketing" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymc-marketing-{{ version }}.tar.gz
-  sha256: 412b92d3a28211dc5ea8191fc1d95832759e1f24548bc2e8d7c4c0d1d92b904c
+  sha256: cdcfcc6f8ee96b1f9bb7a559e732e9cc6e0941bb24ea7cec8a6b97a0a6e96026
 
 build:
   noarch: python

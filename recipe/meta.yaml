@@ -23,9 +23,9 @@ requirements:
     - python >=3.9
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
-    - numpy >=1.17
+    - numpy >=1.17,<1.25
     - pandas
-    - pymc >=5.7.1
+    - pymc >=5.8.2
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray

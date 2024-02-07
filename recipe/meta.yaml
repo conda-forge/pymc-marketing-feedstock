@@ -1,5 +1,5 @@
 {% set name = "pymc-marketing" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymc-marketing-{{ version }}.tar.gz
-  sha256: 8f099f135cc438f5117b04ddd38ad4544a1455d9c6d6b58c2926e188590d500e
+  sha256: 305617ca5c4766444b41ee55d0fa8655c31c3395280427737ac4790dda75194a
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
-    - numpy >=1.17,<1.25
+    - numpy >=1.17
     - pandas
     - pymc >=5.8.2
     - scikit-learn >=1.1.1

@@ -25,7 +25,7 @@ requirements:
     - matplotlib-base >=3.5.1
     - numpy >=1.17
     - pandas
-    - pymc >=5.8.2
+    - pymc >=5.10.4
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray

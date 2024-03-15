@@ -5,4 +5,4 @@ conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
 bot:
-  inpsection: update-grayskull
+  inspection: update-grayskull

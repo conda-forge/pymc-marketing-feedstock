@@ -1,5 +1,5 @@
 {% set name = "pymc-marketing" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b4e204e6dec2d414083fe473c54d5f24e07934a888dad1d3fa9fc0380f6a438f
+  sha256: a2be6d7fce313ec8407512acbc05c5429c1fd37a5b15b55017a8e93ce6c302d8
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - pymc >=5.13.0,<5.16.0
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
-    - xarray
+    - xarray >=2024.1.0
     - xarray-einstats >=0.5.1
 
 test:

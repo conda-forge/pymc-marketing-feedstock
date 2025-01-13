@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pymc-marketing" %}
 {% set version = "0.10.0" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 0f81e997197b9f72b6915aade7bf900cf912ff64bdf84cbf4de9c65ca442b80e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling <2
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
     - numpy >=1.17
@@ -40,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Marketing Statistical Models in PyMC

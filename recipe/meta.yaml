@@ -28,11 +28,12 @@ requirements:
     - numpy >=1.17
     - pandas
     - pydantic >=2.1.0
-    - pymc >=5.13.0,<5.16.0
+    - pymc >=5.20.0
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray >=2024.1.0
     - xarray-einstats >=0.5.1
+    - pyprojroot
 
 test:
   imports:

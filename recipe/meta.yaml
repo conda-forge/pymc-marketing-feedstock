@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pymc-marketing" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ba2733131e4cb1971a5e90b0925f6b96c0062583d7ac682dbc8af4773e8e254e
+  sha256: 698f507449aa3a98110f78c9c3e619d9cd24a5992c5a0ec127963e1595f840d7
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
+    - pytensor >=2.30.3
     - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1

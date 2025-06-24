@@ -22,7 +22,6 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - pytensor >=2.31.3
     - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1

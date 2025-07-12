@@ -22,7 +22,6 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - pytensor >=2.31.3
     - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
@@ -30,7 +29,7 @@ requirements:
     - pandas
     - pydantic >=2.1.0
     - pymc >=5.23.0
-    - pytensor-base >=2.31.3
+    - pytensor >=2.31.3
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray >=2024.1.0

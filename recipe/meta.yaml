@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "pymc-marketing" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c4cec8ba4dfae1140606e6049a762d623926a0d402c0c0ebf15e5fed5359c859
+  sha256: 950852ae4725c837d0fc0b74f25277a8e71f9b14112267e2bb54c443344a6dd0
 
 build:
   noarch: python
@@ -28,14 +28,15 @@ requirements:
     - numpy >=1.17
     - pandas
     - pydantic >=2.1.0
-    - pymc >=5.23.0
+    - pymc >=5.24.1
     - pytensor >=2.31.3
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray >=2024.1.0
     - xarray-einstats >=0.5.1
     - pyprojroot
-    - preliz >=0.8.0
+    - pymc-extras >=0.4.0
+    - preliz >=0.20.0
 
 test:
   imports:

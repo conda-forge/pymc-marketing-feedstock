@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "pymc-marketing" %}
 {% set version = "0.16.0" %}
 
@@ -22,7 +22,6 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - pymc-extras >=0.4.0
     - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
@@ -36,6 +35,7 @@ requirements:
     - xarray >=2024.1.0
     - xarray-einstats >=0.5.1
     - pyprojroot
+    - pymc-extras >=0.4.0
     - preliz >=0.20.0
 
 test:

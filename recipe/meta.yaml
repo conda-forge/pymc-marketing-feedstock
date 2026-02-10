@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pymc-marketing" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d05a5f8d5faf89c356022b0b7a1c0d9f52597e6c4b914c1ef0561e0cb14ef3b5
+  sha256: 00fd360f86fc1913814f27b07d0c6803d52acdf5b9434811a6fded3a5a3b5257
 
 build:
   noarch: python
@@ -22,14 +22,17 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
+    - narwhals
+    - pyyaml
+    - tqdm
     - python >={{ python_min }}
     - arviz >=0.13.0
     - matplotlib-base >=3.5.1
-    - numpy >=1.17
+    - numpy >=2.0
     - pandas
     - pydantic >=2.1.0
-    - pymc >=5.24.1
-    - pytensor >=2.31.3
+    - pymc >=5.27.0
+    - pytensor >=2.36.3
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - xarray >=2024.1.0

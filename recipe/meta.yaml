@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pymc-marketing" %}
-{% set version = "0.19.0" %}
+{% set version = "0.19.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 8e69869aaa63b63a7a51e9d7934f192c375f07ce459e06fe3cd0529f9faf7f22
+  sha256: b02ffb944976640864448bf0cfd5ca9abda376a149dba1502237247e57fb9b5d
 
 build:
   noarch: python

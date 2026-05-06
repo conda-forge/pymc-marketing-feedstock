@@ -22,14 +22,14 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - patsy
-    - arviz-plots >=1.0.0,<2.0
     - python >={{ python_min }}
     - arviz >=0.13.0,<1.0.0
+    - arviz-plots >=1.0.0,<2.0
     - matplotlib-base >=3.5.1
     - narwhals
     - numpy >=2.0
     - pandas
+    - patsy
     - pydantic >=2.1.0
     - pymc >=5.28.1
     - pytensor >=2.38.2

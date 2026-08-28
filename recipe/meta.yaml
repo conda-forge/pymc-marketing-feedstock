@@ -22,10 +22,10 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - arviz-stats >=1.2.0,<2.0
     - python >={{ python_min }}
     - arviz >=1.2.0,<2.0
     - arviz-plots >=1.2.0,<2.0
+    - arviz-stats >=1.2.0,<2.0
     - matplotlib-base >=3.5.1
     - narwhals
     - numpy >=2.0,<2.5
@@ -33,7 +33,6 @@ requirements:
     - patsy
     - pydantic >=2.1.0
     - pymc >=6.2.0,<6.3.0
-    - pytensor >=3.0.0,<4.0
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - tqdm

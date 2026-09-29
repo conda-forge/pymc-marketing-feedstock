@@ -189,6 +189,7 @@ Feedstock Maintainers
 =====================
 
 * [@drbenvincent](https://github.com/drbenvincent/)
+* [@juanitorduz](https://github.com/juanitorduz/)
 * [@maresb](https://github.com/maresb/)
 * [@ricardoV94](https://github.com/ricardoV94/)
 * [@twiecki](https://github.com/twiecki/)

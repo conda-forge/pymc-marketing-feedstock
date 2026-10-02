@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "pymc-marketing" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5afa568c15ad40cf5f6d71efc0e6467f6d160973c8660eb5901782990ae68add
+  sha256: 8a0f65b8ea256590ec9144bfcd50df68cd43332d548f1b6b790451358eb7e520
 
 build:
   noarch: python
@@ -29,17 +29,17 @@ requirements:
     - matplotlib-base >=3.5.1
     - narwhals
     - numpy >=2.0,<2.5
-    - pandas
+    - pandas >=2.2
     - patsy
     - pydantic >=2.1.0
-    - pymc >=6.2.0,<6.3.0
+    - pymc >=6.3.1,<6.4.0
     - scikit-learn >=1.1.1
     - seaborn >=0.12.2
     - tqdm
     - xarray >=2024.1.0
     - xarray-einstats >=0.5.1
     - pyprojroot
-    - pymc-extras >=0.14.0,<0.15.0
+    - pymc-extras >=0.15.0,<0.16.0
     - preliz >=0.20.0,<1.0
     - pyyaml
 

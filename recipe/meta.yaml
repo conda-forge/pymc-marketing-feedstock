@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "pymc-marketing" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: de9f0ea1486d9b0607b8e56a6e7ba11a9a2855f2e5d65e27e54c3ce2db1dede8
+  sha256: dfbf18b91bc198f2def3a7a21aada62eb0f160ee388506b24b5d6ceed6975fd5
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
+    - packaging
     - h5netcdf >=1.8.1
     - h5py >=3.16.0
     - python >={{ python_min }}
